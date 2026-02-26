@@ -1,12 +1,11 @@
 package org.example.prac02_back.user.model;
 
-import lombok.Builder;
 import lombok.Getter;
 
-@Builder
-@Getter
+
 public class UserDto {
-    public static class Signupreq{
+    @Getter
+    public static class SignupReq{
         private String email;
         private String name;
         private String password;

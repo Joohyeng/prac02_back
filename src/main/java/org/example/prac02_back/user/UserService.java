@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class UserService {
     private final UserRepository userRepository;
-    public void signup(UserDto.Signupreq dto) {
+    public void signup(UserDto.SignupReq dto) {
         userRepository.save(dto.toEntity());
 
     }
